@@ -136,10 +136,6 @@ public class ThongKe extends javax.swing.JFrame {
         cbTimKiemTK = new javax.swing.JComboBox();
         btnTimKiemTK = new javax.swing.JButton();
         btnReset = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        txtSoLuong = new javax.swing.JTextField();
-        txtGia = new javax.swing.JTextField();
         btnPrint = new javax.swing.JButton();
         txtStart = new com.toedter.calendar.JDateChooser();
         jLabel3 = new javax.swing.JLabel();
@@ -147,8 +143,6 @@ public class ThongKe extends javax.swing.JFrame {
         lbSPBan = new javax.swing.JLabel();
         txtdate1 = new com.toedter.calendar.JDateChooser();
         btnNgay = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Thống Kê");
@@ -184,20 +178,6 @@ public class ThongKe extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("Tổng số lượng:");
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("Tổng giá:");
-
-        txtSoLuong.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        txtSoLuong.setDisabledTextColor(new java.awt.Color(255, 0, 0));
-        txtSoLuong.setEnabled(false);
-
-        txtGia.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        txtGia.setDisabledTextColor(new java.awt.Color(255, 0, 0));
-        txtGia.setEnabled(false);
-
         btnPrint.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnPrint.setText("In");
         btnPrint.addActionListener(new java.awt.event.ActionListener() {
@@ -229,12 +209,6 @@ public class ThongKe extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel5.setText("Ly");
-
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel6.setText("VNĐ");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -244,38 +218,19 @@ public class ThongKe extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 841, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 16, Short.MAX_VALUE))
+                        .addGap(0, 109, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cbTimKiemTK, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(txtSoLuong, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel5))
-                                    .addComponent(cbTimKiemTK, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(160, 160, 160)
-                                        .addComponent(txtGia, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel2))
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel6)))
-                        .addGap(51, 51, 51)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnTimKiemTK)
-                                .addGap(102, 102, 102)
+                                .addGap(260, 260, 260)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtStart, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtdate1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(329, 329, 329)
+                                .addGap(380, 380, 380)
                                 .addComponent(lbSPBan, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -284,36 +239,31 @@ public class ThongKe extends javax.swing.JFrame {
                 .addGap(44, 44, 44)
                 .addComponent(btnPrint)
                 .addGap(34, 34, 34)
-                .addComponent(btnNgay)
-                .addGap(73, 73, 73)
-                .addComponent(btnReset)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnTimKiemTK)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnNgay)
+                        .addGap(73, 73, 73)
+                        .addComponent(btnReset)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cbTimKiemTK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel3)
-                        .addComponent(btnTimKiemTK))
-                    .addComponent(txtStart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(txtStart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 21, Short.MAX_VALUE)
-                        .addComponent(txtdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(txtdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(txtSoLuong, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(txtGia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6))))
+                            .addComponent(cbTimKiemTK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3)
+                            .addComponent(btnTimKiemTK))))
+                .addGap(28, 28, 28)
                 .addComponent(lbSPBan, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -323,168 +273,25 @@ public class ThongKe extends javax.swing.JFrame {
                     .addComponent(btnReset))
                 .addGap(32, 32, 32)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnTimKiemTKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTimKiemTKActionPerformed
-        // TODO add your handling code here:
-        tblModel.getDataVector().removeAllElements();
-        String s1 = (String) cbTimKiemTK.getSelectedItem();
-        if (cbTimKiemTK.getSelectedIndex() == -1) {
-            JOptionPane.showMessageDialog(null, "Tên sản phẩm không được để trống.");
-            btnPrint.setEnabled(false);
-        } else {
-            try {
-
-                psTK = con.prepareStatement("select * from OrderDetails join [Order] on OrderDetails.IDOrder=[Order].IDOrder"
-                        + " join Product on OrderDetails.IDProduct=Product.IDProduct where ProductName=?");
-                psTK.setString(1, (String) cbTimKiemTK.getSelectedItem());
-                rsTK = psTK.executeQuery();
-                if (rsTK.next()) {
-                    psTK = con.prepareStatement("select * from OrderDetails join [Order] on OrderDetails.IDOrder=[Order].IDOrder"
-                            + " join Product on OrderDetails.IDProduct=Product.IDProduct where ProductName=?");
-                    psTK.setString(1, (String) cbTimKiemTK.getSelectedItem());
-                    rsTK = psTK.executeQuery();
-                    while (rsTK.next()) {
-                        vecTK = new Vector();
-                        vecTK.add(rsTK.getString("IDOrder"));
-                        vecTK.add(rsTK.getString("ProductName"));
-                        vecTK.add(rsTK.getString("Price"));
-                        vecTK.add(rsTK.getString("IDType"));
-                        vecTK.add(rsTK.getString("Quantity"));
-                        tblModel.addRow(vecTK);
-                    }
-                    tblThongKe.setModel(tblModel);
-                } else {
-                    JOptionPane.showMessageDialog(null, "Không tìm được sản phẩm");
-                    loadBangSP();
-                }
-            } catch (Exception e) {
-            }
-            int line = tblThongKe.getRowCount();
-            int tong = 0, tinhtien = 0;
-            for (int i = 0; i < line; i++) {
-//            if (tblThongKe.getValueAt(i, 1).equals(cbTimKiemTK.getSelectedItem())) {
-                int SL = Integer.parseInt((String) tblThongKe.getValueAt(i, 4));
-                int tien = Integer.parseInt((String) tblThongKe.getValueAt(i, 2));
-                tong += SL;
-                tinhtien += tien;
-//                spQuantity.setValue(quanTotal);
-//            }
-            }
-            txtGia.setText(String.valueOf(nft.format(tinhtien)));
-            txtSoLuong.setText(String.valueOf(tong));
-//        loadBangSP();
-            cbTimKiemTK.setSelectedIndex(-1);
-        }
-        btnPrint.setEnabled(true);
-    }//GEN-LAST:event_btnTimKiemTKActionPerformed
-
-    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
-        // TODO add your handling code here:
-        txtSoLuong.setText("");
-        txtGia.setText("");
-        cbTimKiemTK.setSelectedIndex(-1);
-        tblModel.getDataVector().removeAllElements();
-        loadBangSP();
-        btnPrint.setEnabled(false);
-    }//GEN-LAST:event_btnResetActionPerformed
-
-    private void btnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintActionPerformed
-        // TODO add your handling code here:
-        File file = new File("src//CoffeeManagement//ThongKe.txt");
-        file.delete();
-        //Viết vào file txt
-        try {
-            Date now = new Date();
-            Writer b = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src//CoffeeManagement//ThongKe.txt"), "UTF8"));
-            b.write("\t\t\t\t\t\tThe Coffee House\r\n\r\n");
-            b.write("\t\t\t\t\tĐịa chỉ: Can Tho\r\n");
-            b.write("\t\t\t\t\t\tSĐT: 0339602164\r\n");
-            b.write("\t\t\t\t\tThời gian: " + time.format(now) + "\r\n\r\n");
-            b.write("\t\t\t\t\tBảng Thống Kê Sản Phẩm " + ft.format(txtStart.getDate()) + "\r\n");
-//            b.write("Tài khoản: " + cbTimKiemTK.getSelectedItem() + "\r\n");
-            try {
-                ps = con.prepareStatement("Select DISTINCT ProductName from Product");
-//                ps = con.prepareStatement("select * from OrderDetails join [Order] on OrderDetails.IDOrder=[Order].IDOrder"
-//                    + " join Product on OrderDetails.IDProduct=Product.IDProduct Order by OrderDetails.IDOrder DESC");
-                ps.setString(1, (String) cbTimKiemTK.getSelectedItem());
-                rsInfoEmp = ps.executeQuery();
-                if (rsInfoEmp.next()) {
-                    b.write("Tên sản phẩm: " + rsInfoEmp.getString("ProductName") + "\r\n\r\n");
-                }
-            } catch (SQLException ex) {
-            }
-            b.write("--------------------------------------------------------------------------------------------------------------------------------\r\n");
-            b.write("\t\t\t\tMã HĐ\tTên SP\t\t\t\tĐơn giá (VNĐ)\tLoại SP\t\tSố lượng (ly)\r\n");
-            b.write("--------------------------------------------------------------------------------------------------------------------------------\r\n");
-
-            int line = tblThongKe.getRowCount();
-            for (int i = 0; i < line; i++) {
-                String s1 = (String) tblThongKe.getValueAt(i, 0);
-                String s2 = (String) tblThongKe.getValueAt(i, 1);
-                String s3 = (String) tblThongKe.getValueAt(i, 2);
-                String s4 = (String) tblThongKe.getValueAt(i, 3);
-                String s5 = (String) tblThongKe.getValueAt(i, 4);
-                b.write("\t\t\t\t" + s1 + "\t" + s2 + "\t\t\t" + s3 + "\t\t" + s4 + "\t\t" + s5 + "\t" + "\r\n");
-            }
-            b.write("--------------------------------------------------------------------------------------------------------------------------------\r\n");
-            b.write("\t\t\t\t\t\t\t\t\t\t\t\tTổng số lượng: " + txtSoLuong.getText() + "\r\n\r\n");
-            b.write("\t\t\t\t\t\t\t\t\t\t\t\tTổng tiền: " + txtGia.getText() + "\tVNĐ");
-            b.close();
-        } catch (IOException | NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
-        //Mở file txt
-        Runtime run = Runtime.getRuntime();
-        try {
-            run.exec("notepad ThongKe.txt");
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
-        btnResetActionPerformed(evt);
-    }//GEN-LAST:event_btnPrintActionPerformed
-
-    private void SPBanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SPBanActionPerformed
-        // TODO add your handling code here:
-
-        tblModel.getDataVector().removeAllElements();
-        try {
-
-            psSPBan = con.prepareStatement("select o.IDProduct, p.Price,p.ProductName,p.IDType, SUM(o.Quantity) as Tong"
-                    + " from OrderDetails o join Product p on o.IDProduct=p.IDProduct Group by o.IDProduct,p.Price,p.ProductName,p.IDType order by Tong DESC");
-            rsSPBan = psSPBan.executeQuery();
-            while (rsSPBan.next()) {
-                vecSPBan = new Vector();
-                vecSPBan.add(rsSPBan.getString("IDProduct"));
-                vecSPBan.add(rsSPBan.getString("ProductName"));
-                vecSPBan.add(rsSPBan.getString("Price"));
-                vecSPBan.add(rsSPBan.getString("IDType"));
-                vecSPBan.add(rsSPBan.getString("Tong"));
-                tblModel.addRow(vecSPBan);
-            }
-            tblThongKe.setModel(tblModel);
-        } catch (Exception e) {
-        }
-        btnPrint.setEnabled(true);
-    }//GEN-LAST:event_SPBanActionPerformed
 
     private void btnNgayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNgayActionPerformed
         // TODO add your handling code here:
@@ -509,17 +316,17 @@ public class ThongKe extends javax.swing.JFrame {
         tblThongKe.setModel(tblMD);
         try {
             psSPBan = con.prepareStatement("select o.IDProduct, p.Price,p.ProductName,p.IDType,a.DateOrder"
+                + " from OrderDetails o join Product p on o.IDProduct=p.IDProduct"
+                + "	join [Order] a on a.IDOrder=o.IDOrder"
+                + " where convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) >= '" + start + "'"
+                + "  and convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) <= '" + end + "' order by convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) DESC");
+            rsSPBan = psSPBan.executeQuery();
+            if (rsSPBan.next()) {
+                psSPBan = con.prepareStatement("select o.IDProduct, p.Price,p.ProductName,p.IDType,a.DateOrder"
                     + " from OrderDetails o join Product p on o.IDProduct=p.IDProduct"
                     + "	join [Order] a on a.IDOrder=o.IDOrder"
                     + " where convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) >= '" + start + "'"
                     + "  and convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) <= '" + end + "' order by convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) DESC");
-            rsSPBan = psSPBan.executeQuery();
-            if (rsSPBan.next()) {
-                psSPBan = con.prepareStatement("select o.IDProduct, p.Price,p.ProductName,p.IDType,a.DateOrder"
-                        + " from OrderDetails o join Product p on o.IDProduct=p.IDProduct"
-                        + "	join [Order] a on a.IDOrder=o.IDOrder"
-                        + " where convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) >= '" + start + "'"
-                        + "  and convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) <= '" + end + "' order by convert(varchar, TRY_PARSE(DateOrder as date using 'vi-vn'), 111) DESC");
                 rsSPBan = psSPBan.executeQuery();
                 while (rsSPBan.next()) {
                     vecSPBan = new Vector();
@@ -527,7 +334,7 @@ public class ThongKe extends javax.swing.JFrame {
                     vecSPBan.add(rsSPBan.getString("ProductName"));
                     vecSPBan.add(rsSPBan.getString("Price"));
                     vecSPBan.add(rsSPBan.getString("IDType"));
-//                    vecSPBan.add(rsSPBan.getString("Tong"));
+                    //                    vecSPBan.add(rsSPBan.getString("Tong"));
                     vecSPBan.add(rsSPBan.getString("DateOrder"));
                     tblMD.addRow(vecSPBan);
                 }
@@ -537,10 +344,153 @@ public class ThongKe extends javax.swing.JFrame {
             }
         } catch (Exception e) {
         }
-        txtGia.setText("");
-        txtSoLuong.setText("");
-//        btnPrint.setEnabled(true);
+//        txtGia.setText("");
+//        txtSoLuong.setText("");
+        //        btnPrint.setEnabled(true);
     }//GEN-LAST:event_btnNgayActionPerformed
+
+    private void SPBanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SPBanActionPerformed
+        // TODO add your handling code here:
+
+        tblModel.getDataVector().removeAllElements();
+        try {
+
+            psSPBan = con.prepareStatement("select o.IDProduct, p.Price,p.ProductName,p.IDType, SUM(o.Quantity) as Tong"
+                + " from OrderDetails o join Product p on o.IDProduct=p.IDProduct Group by o.IDProduct,p.Price,p.ProductName,p.IDType order by Tong DESC");
+            rsSPBan = psSPBan.executeQuery();
+            while (rsSPBan.next()) {
+                vecSPBan = new Vector();
+                vecSPBan.add(rsSPBan.getString("IDProduct"));
+                vecSPBan.add(rsSPBan.getString("ProductName"));
+                vecSPBan.add(rsSPBan.getString("Price"));
+                vecSPBan.add(rsSPBan.getString("IDType"));
+                vecSPBan.add(rsSPBan.getString("Tong"));
+                tblModel.addRow(vecSPBan);
+            }
+            tblThongKe.setModel(tblModel);
+        } catch (Exception e) {
+        }
+        btnPrint.setEnabled(true);
+    }//GEN-LAST:event_SPBanActionPerformed
+
+    private void btnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintActionPerformed
+        // TODO add your handling code here:
+        File file = new File("src//CoffeeManagement//ThongKe.txt");
+        file.delete();
+        //Viết vào file txt
+        try {
+            Date now = new Date();
+            Writer b = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src//CoffeeManagement//ThongKe.txt"), "UTF8"));
+            b.write("\t\t\t\t\t\tThe Coffee House\r\n\r\n");
+            b.write("\t\t\t\t\tĐịa chỉ: Can Tho\r\n");
+            b.write("\t\t\t\t\tSĐT: 0339602164\r\n");
+            b.write("\t\t\t\t\tThời gian: " + time.format(now) + "\r\n\r\n");
+            b.write("\t\t\t\t\tBảng Thống Kê Sản Phẩm " + ft.format(txtStart.getDate()) + "\r\n");
+            //            b.write("Tài khoản: " + cbTimKiemTK.getSelectedItem() + "\r\n");
+            try {
+                ps = con.prepareStatement("Select DISTINCT ProductName from Product");
+                //                ps = con.prepareStatement("select * from OrderDetails join [Order] on OrderDetails.IDOrder=[Order].IDOrder"
+                    //                    + " join Product on OrderDetails.IDProduct=Product.IDProduct Order by OrderDetails.IDOrder DESC");
+                ps.setString(1, (String) cbTimKiemTK.getSelectedItem());
+                rsInfoEmp = ps.executeQuery();
+                if (rsInfoEmp.next()) {
+                    b.write("Tên sản phẩm: " + rsInfoEmp.getString("ProductName") + "\r\n\r\n");
+                }
+            } catch (SQLException ex) {
+            }
+            b.write("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\n");
+            b.write("\t\t\t\tMã HĐ\tTên SP\t\t\tĐơn giá (VNĐ)\tLoại SP\t\tSố lượng (ly)\r\n");
+            b.write("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\n");
+
+            int line = tblThongKe.getRowCount();
+            for (int i = 0; i < line; i++) {
+                String s1 = (String) tblThongKe.getValueAt(i, 0);
+                String s2 = (String) tblThongKe.getValueAt(i, 1);
+                String s3 = (String) tblThongKe.getValueAt(i, 2);
+                String s4 = (String) tblThongKe.getValueAt(i, 3);
+                String s5 = (String) tblThongKe.getValueAt(i, 4);
+                b.write("\t\t\t\t" + s1 + "\t" + s2 + "\t\t\t" + s3 + "\t\t" + s4 + "\t\t" + s5 + "\t" + "\r\n");
+            }
+            b.write("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\n");
+//            b.write("\t\t\t\t\t\t\t\t\t\t\t\tTổng số lượng: " + txtSoLuong.getText() + "\r\n\r\n");
+//            b.write("\t\t\t\t\t\t\t\t\t\t\t\tTổng tiền: " + txtGia.getText() + "\tVNĐ");
+            b.close();
+        } catch (IOException | NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        //Mở file txt
+        Runtime run = Runtime.getRuntime();
+        try {
+            run.exec("notepad src//CoffeeManagement//ThongKe.txt");
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        btnResetActionPerformed(evt);
+    }//GEN-LAST:event_btnPrintActionPerformed
+
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+        // TODO add your handling code here:
+//        txtSoLuong.setText("");
+//        txtGia.setText("");
+        cbTimKiemTK.setSelectedIndex(-1);
+        tblModel.getDataVector().removeAllElements();
+        loadBangSP();
+        btnPrint.setEnabled(false);
+    }//GEN-LAST:event_btnResetActionPerformed
+
+    private void btnTimKiemTKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTimKiemTKActionPerformed
+        // TODO add your handling code here:
+        tblModel.getDataVector().removeAllElements();
+        String s1 = (String) cbTimKiemTK.getSelectedItem();
+        if (cbTimKiemTK.getSelectedIndex() == -1) {
+            JOptionPane.showMessageDialog(null, "Tên sản phẩm không được để trống.");
+            btnPrint.setEnabled(false);
+        } else {
+            try {
+
+                psTK = con.prepareStatement("select * from OrderDetails join [Order] on OrderDetails.IDOrder=[Order].IDOrder"
+                    + " join Product on OrderDetails.IDProduct=Product.IDProduct where ProductName=?");
+                psTK.setString(1, (String) cbTimKiemTK.getSelectedItem());
+                rsTK = psTK.executeQuery();
+                if (rsTK.next()) {
+                    psTK = con.prepareStatement("select * from OrderDetails join [Order] on OrderDetails.IDOrder=[Order].IDOrder"
+                        + " join Product on OrderDetails.IDProduct=Product.IDProduct where ProductName=?");
+                    psTK.setString(1, (String) cbTimKiemTK.getSelectedItem());
+                    rsTK = psTK.executeQuery();
+                    while (rsTK.next()) {
+                        vecTK = new Vector();
+                        vecTK.add(rsTK.getString("IDOrder"));
+                        vecTK.add(rsTK.getString("ProductName"));
+                        vecTK.add(rsTK.getString("Price"));
+                        vecTK.add(rsTK.getString("IDType"));
+                        vecTK.add(rsTK.getString("Quantity"));
+                        tblModel.addRow(vecTK);
+                    }
+                    tblThongKe.setModel(tblModel);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Không tìm được sản phẩm");
+                    loadBangSP();
+                }
+            } catch (Exception e) {
+            }
+            int line = tblThongKe.getRowCount();
+            int tong = 0, tinhtien = 0;
+            for (int i = 0; i < line; i++) {
+                //            if (tblThongKe.getValueAt(i, 1).equals(cbTimKiemTK.getSelectedItem())) {
+                    int SL = Integer.parseInt((String) tblThongKe.getValueAt(i, 4));
+                    int tien = Integer.parseInt((String) tblThongKe.getValueAt(i, 2));
+                    tong += SL;
+                    tinhtien += tien;
+                    //                spQuantity.setValue(quanTotal);
+                    //            }
+            }
+//            txtGia.setText(String.valueOf(nft.format(tinhtien)));
+//            txtSoLuong.setText(String.valueOf(tong));
+            //        loadBangSP();
+            cbTimKiemTK.setSelectedIndex(-1);
+        }
+        btnPrint.setEnabled(true);
+    }//GEN-LAST:event_btnTimKiemTKActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton SPBan;
@@ -549,17 +499,11 @@ public class ThongKe extends javax.swing.JFrame {
     private javax.swing.JButton btnReset;
     private javax.swing.JButton btnTimKiemTK;
     private javax.swing.JComboBox cbTimKiemTK;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbSPBan;
     private javax.swing.JTable tblThongKe;
-    private javax.swing.JTextField txtGia;
-    private javax.swing.JTextField txtSoLuong;
     private com.toedter.calendar.JDateChooser txtStart;
     private com.toedter.calendar.JDateChooser txtdate1;
     // End of variables declaration//GEN-END:variables

@@ -149,6 +149,11 @@ public class Revenue extends javax.swing.JFrame {
                 txtDateCaretUpdate(evt);
             }
         });
+        txtDate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDateActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -317,9 +322,9 @@ public class Revenue extends javax.swing.JFrame {
             String a;
             Date now = new Date();
 
-            b.write("The Coffee House\r\n\r\n");
-            b.write("Địa chỉ: Can Tho\r\n");
-            b.write("SĐT: 01212692802\r\n");
+            b.write("\tThe Coffee House\r\n\r\n");
+            b.write("Địa chỉ: Cần Thơ\r\n");
+            b.write("SĐT: 0339602164\r\n");
             b.write("Thời gian: " + ft.format(now) + "\r\n\r\n");
             if (txtDate.getText().trim().matches("[0-9]{0,2}/[0-9]{0,2}/[0-9]{4}")) {
                 a = "ngày " + txtDate.getText().trim();
@@ -343,7 +348,7 @@ public class Revenue extends javax.swing.JFrame {
             }
             b.write("\t---------------------------------\r\n");
             b.write("\tTổng tiền:\t\t" + lbTong.getText().trim() + "\r\n\r\n\r\n");
-            b.write("Người lập (Ký và ghi rõ họ tên)");
+            b.write("Nhân viên thu ngân(ký tên)");
             b.close();
         } catch (IOException | NumberFormatException e) {
             JOptionPane.showMessageDialog(null, e);
@@ -351,12 +356,16 @@ public class Revenue extends javax.swing.JFrame {
         //Mở file txt
         Runtime run = Runtime.getRuntime();
         try {
-            run.exec("notepad Revenue.txt");
+            run.exec("notepad src//CoffeeManagement//Revenue.txt");
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, e);
         }
         btnRefreshActionPerformed(evt);
     }//GEN-LAST:event_btnPrintActionPerformed
+
+    private void txtDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDateActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
