@@ -17,3 +17,4 @@ Lý:
 	order
 	pomotion
 	setImage
+All of task above have contribution of Ly and all of members in group.
