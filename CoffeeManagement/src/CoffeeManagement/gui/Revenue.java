@@ -323,13 +323,13 @@ public class Revenue extends javax.swing.JFrame {
             b.write("Thời gian: " + ft.format(now) + "\r\n\r\n");
             if (txtDate.getText().trim().matches("[0-9]{0,2}/[0-9]{0,2}/[0-9]{4}")) {
                 a = "ngày " + txtDate.getText().trim();
-                b.write("\tBảng thong61h kê doanh thu (theo " + a + ")\r\n\r\n");
+                b.write("\tBảng thống kê doanh thu (theo " + a + ")\r\n\r\n");
             } else if (txtDate.getText().trim().matches("[0-9]{0,2}/[0-9]{4}")) {
                 a = "tháng " + txtDate.getText().trim();
-                b.write("\tBảng thong61h kê doanh thu (theo " + a + ")\r\n\r\n");
+                b.write("\tBảng thống kê doanh thu (theo " + a + ")\r\n\r\n");
             } else if (txtDate.getText().trim().matches("[0-9]{4}")) {
                 a = "năm " + txtDate.getText().trim();
-                b.write("\tBảng thong61h kê doanh thu (theo " + a + ")\r\n\r\n");
+                b.write("\tBảng thống kê doanh thu (theo " + a + ")\r\n\r\n");
             }
             b.write("\t---------------------------------\r\n");
             b.write("\tID\tNgày thu\tSố tiền\r\n");

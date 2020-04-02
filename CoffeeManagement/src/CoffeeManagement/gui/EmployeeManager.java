@@ -187,7 +187,7 @@ public class EmployeeManager extends javax.swing.JFrame {
         setTitle("Quản lý nhân viên");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel7.setText("BẢNG QUẢN LÍ NHÂN VIÊN");
+        jLabel7.setText("QUẢN LÍ NHÂN VIÊN");
 
         tblEmp.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
