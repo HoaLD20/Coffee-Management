@@ -1,29 +1,20 @@
-1. Đăng nhập - Hòa
-Phần đăng nhập tui cho nó vào bảng Login, giá trị trả về là giá trị ở cột position để xem tài khoản đăng nhập đó là admin hay quản lý hay nhân viên (tui có viết phần đăng nhập cho admin rồi nhưng chưa viết hết chức năng của admin).
-
-2. Quản lí nhân viên - Nguyên
-Quản lý trong bảng Login.
-
-3. Quản lí bàn, ghế, cơ sở vật chất của quán - Hương
-Này trong bảng infrastructure.
-
-4. Quản lí giá bán - Lý
-
-5. Quản lí menu - Nguyên
-Menu tui nghĩ là chỉ cần lấy tên với giá sản phẩm nên ông lấy giá trị của cột item_name với cột price trong bảng List_item nha.
-
-6. Quản lí hàng đã bán - Huong
-Số lượng bán trong ngày, tháng, quý trong bảng List_item. 
-
-7. Quản lí hàng tồn - Lý
-
-8. Thống kê bán hàng - Hương 
-Thống kê số lượng sản phẩm bán trong ngày -> này trong bảng List_item nha. 
-
-9. Thống kê mức độ yêu thích khách hàng Nguyên
-Thống kê mặt hàng nào bán được nhiều nhất -> bắt được trend hoặc sở thích của khách hàng. -> này là giá trị của cột favorite_level trong bảng List_item.
-
-Lý: thiết kế DataBase
-Hương: thiết kế giao diện
-Nguyên: thiết kế diagram
-Hòa: làm document
+Hương:
+	aboutus
+	passwordchange
+	product
+	information
+Nguyên:
+	customer
+	history
+	revenue
+	thống kê
+Hòa:
+	adminform
+	billform
+	combolistener
+	loginform
+Lý:
+	employee management
+	order
+	pomotion
+	setImage
