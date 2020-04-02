@@ -5,7 +5,6 @@ Hương:
 	information
 Nguyên:
 	customer
-	history
 	revenue
 	thống kê
 Hòa:
